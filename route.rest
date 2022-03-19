@@ -1,0 +1,9 @@
+GET http://localhost:6000/annotations 
+###
+GET   http://localhost:6000/annotations/62332783449bc9d973262ba9
+###
+POST http://localhost:6000/annotations/ HTTP/1.1
+
+{
+    "name":"Beshoy"
+}
