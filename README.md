@@ -1,6 +1,7 @@
 - This is Restful api to store questions and their annotations
 - This project has been built using these technologies (Nodejs - expressjs - Mongodb)
-- the server of this poject works on port 6000
+- the server of this project works on port 6000
+- to run this project locally please download this project and run this command at your cmd => npm run devStart
 - To fetch data you can use postman and follow these API's calling
 
 ```
