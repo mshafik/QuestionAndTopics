@@ -1,12 +1,9 @@
 
-require('dotenv').config()
-
 const express = require('express');
 const app = express();
-app.listen(6000, () => console.log('Server Started'));
-
+app.listen(process.env.PORT || 6000, () => console.log('Server Started'))
 const mongoose=require('mongoose');
-mongoose.connect(process.env.DataBase_URL);
+mongoose.connect('mongodb+srv://milad:Zwhe24ZOK4XD6JuB@cluster0.grdq6.mongodb.net/QuestionsAndTopicsDB');
 const db=mongoose.connection;
 db.on('err',(error)=>console.error(error));
 db.once('open',()=>console.log('connected to database'));
