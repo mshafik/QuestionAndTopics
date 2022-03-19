@@ -6,7 +6,7 @@
      npm run devStart
   ```
 - the server of this project works on port 6000
-- the database is hosted on mongodb Atlas https://docs.mongodb.com/ you can access it from mongodb compass GUI
+- the database is hosted on mongodb Atlas https://docs.mongodb.com/ , you can access it from mongodb compass GUI
      ```
      mongodb+srv://milad:Zwhe24ZOK4XD6JuB@cluster0.grdq6.mongodb.net/QuestionsAndTopicsDB
      ```
@@ -17,17 +17,17 @@
      ==== To add Question ==========
 
      Method: POST
-     endpoint: http://localhost:6000/questions/addQuestion
+     endpoint:https://secure-escarpment-49908.herokuapp.com/questions/addQuestion
      body:
      {
       "title":"1"
      }
 
 
-     ==== To add Annotation========
+     ==== To add Annotation to specific question ========
 
      Method: POST
-     endpoint: http://localhost:6000/questions/addAnnotation
+     endpoint: https://secure-escarpment-49908.herokuapp.com/questions/addAnnotation
      body:
      {
           "questionId":"6234b247a645b0f33ff3ef89",
@@ -39,7 +39,7 @@
      ====To get all Questions=====
 
      Method: GET
-     endpoint:  http://localhost:6000/questions
+     endpoint:  https://secure-escarpment-49908.herokuapp.com/questions
      Result:
      [
          {
@@ -71,42 +71,17 @@
      ]
 
 
-     ====To get Question by Id =====
-
-     Method: GET
-     endpoint:  http://localhost:6000/questions/6234ad57e3fd365dfc40c7e4
-     Result:
-     {
-         "_id": "6234ad57e3fd365dfc40c7e4",
-         "Question number": "1",
-         "annotations": [
-             {
-                 "_id": "6234b247a645b0f33ff3ef89",
-                 "title": "Define diffusion and describe its role in nutrient uptake and gaseous exchange in plants and humans"
-             },
-             {
-                 "_id": "6234b255a645b0f33ff3ef8c",
-                 "title": "Define active transport and discuss its importance as an energy-consuming process by which substances are transported against a concentration                       gradient, as in ion uptake by root hairs and uptake of glucose by cells in the villi"
-             },
-             {
-                 "_id": "6234b261a645b0f33ff3ef8f",
-                 "title": "Define homeostasis as the maintenance of a constant internal environment"
-             }
-         ]
-     }
-
-
-
      ============To remove question by Id============
 
-     Method: GET
-     endpoint:  http://localhost:6000/questions/6233633e9ee0fddd6cc61da5
+     Method: DELETE
+     endpoint:  https://secure-escarpment-49908.herokuapp.com/questions/6235dbedbe7994512889f750
      Result: Removed successfully
+
 
 
      ============= To Search about questions using some topic ================
      Method: GET
-     endpoint:  http://localhost:6000/questions/search?q=Golgi body
+     endpoint:  https://secure-escarpment-49908.herokuapp.com/questions/search?q=Golgi%20body
      Result:
      [
          {
